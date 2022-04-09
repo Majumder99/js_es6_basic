@@ -36,14 +36,17 @@
 
 // Arrow function and this
 // Arrow functio don't rebind this
-const person = {
-  talk() {
-    // var self = this;
-    // setTimeout(function () {
-    //   console.log("self", self);
-    // }, 1000);
-    // Arrow function inherited the this keyword. That's why it returns the reference of the object
-    setTimeout(() => console.log("this", this), 1000);
-  },
-};
-person.talk();
+// const person = {
+//   talk() {
+//     // var self = this;
+//     // setTimeout(function () {
+//     //   console.log("self", self);
+//     // }, 1000);
+//     // Arrow function inherited the this keyword. That's why it returns the reference of the object
+//     setTimeout(() => console.log("this", this), 1000);
+//   },
+// };
+// person.talk();
+const colors = ["red", "green", "blue"];
+const item = colors.map((color) => `<li>${color}</li>`);
+console.log(item);
